@@ -1,0 +1,7 @@
+suites:
+    main:
+        namespace: Test
+        psr4_prefix: Test
+        src_path: src
+        spec_path: .
+        formatter.name: pretty
