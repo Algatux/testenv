@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="TestEnvironment" default="test">
+
+    <!-- ============================================  -->
+    <!-- Target: test                                  -->
+    <!-- ============================================  -->
+    <target name="test" depends="test_unit,test_functional,test_spec">
+
+        <echo msg="Tests OK!!"/>
+
+    </target>
+
+    <!-- ============================================  -->
+    <!-- Target: test_unit                             -->
+    <!-- ============================================  -->
+    <target name="test_unit">
+
+        <echo msg="Unit Tests" />
+        <exec command="php bin/phpunit --testsuite='Unit Suite'" passthru="true" checkreturn="true" />
+
+    </target>
+
+    <!-- ============================================  -->
+    <!-- Target: test_functional                       -->
+    <!-- ============================================  -->
+    <target name="test_functional">
+
+        <echo msg="Functional Tests" />
+        <exec command="php bin/phpunit --testsuite='Functional Suite'" passthru="true" checkreturn="true" />
+
+    </target>
+
+    <!-- ============================================  -->
+    <!-- Target: test_spec                             -->
+    <!-- ============================================  -->
+    <target name="test_spec">
+
+        <echo msg="PhpSpec Tests" />
+        <exec command="php bin/phpspec run -v" passthru="true" checkreturn="true" />
+
+    </target>
+
+</project>

@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Cases;
+namespace TestCases;
 
 /**
  * Class BaseTestCase

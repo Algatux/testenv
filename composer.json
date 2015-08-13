@@ -10,12 +10,13 @@
     "autoload": {
         "psr-4": {
             "Test\\": "src/",
-            "Test\\Cases\\": "tests/testCases"
+            "TestCases\\": "tests/testCases"
         }
     },
     "require": {
         "phpunit/phpunit": "^4.8",
-        "phpspec/phpspec": "^2.2"
+        "phpspec/phpspec": "^2.2",
+        "phing/phing": "^2.11"
     },
     "config": {
         "bin-dir": "bin"
