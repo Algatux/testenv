@@ -9,7 +9,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Test\\": "src/"
+            "Test\\": "src/",
+            "Test\\Cases\\": "tests/testCases"
         }
     },
     "require": {
