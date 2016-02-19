@@ -18,8 +18,8 @@ class FrameTest extends BaseTestCase
     {
         $frame = new Frame();
         $frame->setScore(4);
-        $frame->setScore(6);
-        $this->assertEquals(10, $frame->getScore());
+        $frame->setScore(5);
+        $this->assertEquals(9, $frame->getScore());
         $this->setExpectedException(\InvalidArgumentException::class);
         $frame->setScore(1);
     }
