@@ -9,7 +9,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Test\\": "src/",
+            "": "src/",
+            "Test\\": "tests/",
             "TestCases\\": "tests/testCases"
         }
     },
